@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        div{
+            background-color: darkblue;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            margin: 25px;
+            border-radius: 50px;
+            animation: move 2.5s infinite;
+        }
+        @keyframes move{
+            0%{top: 0px; background-color: darkblue;}
+            50%{top: 200px; background-color: red;}
+            100%{top: 0px; background-color: darkblue;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
